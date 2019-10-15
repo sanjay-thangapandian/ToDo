@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>TODO LIST</title>
+        <link rel="stylesheet" href="todo.css">
+        <link rel="stylesheet" href="todoexternal.css">
+    </head>
+    <body>
+        <header>
+            <span >
+                <button class= "menu-icon">
+                    <img src="menuicon.png">
+                </button>
+            </span>
+            <span class="todo-span">To Do</span>
+                <a href="todo.html" role="link" class="todo-link">
+                </a>
+            </span>
+            <div class ="search-bar">
+                <input type="search" value="search"/>
+            </div>
+        </header>
+        <div class ="main">
+                <nav id="toogle" role="navigation" class="nav-close" >
+                    <div class="ham-menu">
+                        <button class="menu" aria-expanded="false" aria-label="Toggle sidebar" onclick="toggleSidebar('toogle')">
+                            <i class="icon fontIcon ms-Icon ms-Icon--GlobalNavButton iconSize-24" aria-hidden="true">
+                            </i>
+                        </button>
+                    </div>
+                    <div class="left-icon"><i class=" ms-Icon ms-Icon--Sunny iconSize-24"></i><span class="toggle-bar" >My Day</span></div>
+                    <div class="left-icon"><i class=" ms-Icon ms-Icon--FavoriteStar iconSize-24"></i><span class="toggle-bar" >Important</span></div>
+                    <div class="left-icon"><i class=" ms-Icon ms-Icon--Calendar iconSize-24"></i><span class="toggle-bar" >Planned</span></div>
+                    <div class="left-icon"><i class=" ms-Icon ms-Icon--Contact iconSize-24 contact-color"></i><span class="toggle-bar" >Assigned to Me</span></div>
+                    <div class="left-icon"><i class=" ms-Icon ms-Icon--Home iconSize-24 icon-color"></i><span class="toggle-bar" >Tasks</span></div>
+                    <ul class="tasks" id="list">
+
+                    </ul>
+                    <div class="left-icon plus" onclick="taskMenu('toogle')" ><i class=" ms-Icon ms-Icon--Add iconSize-18" ></i>
+                        <span class="toggle-bar textfield">
+                            <input type="text" placeholder="New list" id="task"/>
+                        </span>
+                    </div>
+                </nav>
+                <aside class = "background-lines">
+                    <div  >
+                        <span><h1 id="task-title">Tasks</h1><span class="id-visible" id="task-title-id"></span></span>
+                    </div>
+                    <div> 
+                        <ul id="sub-task">
+                        </ul>
+                        <input id ="subinput" type="text" placeholder="Add task"/>
+                    </div>
+                </aside>
+                <div class ="right-col" id="add-step">
+                    <input id="sub-task-list" type="text"/>
+                    <span class = "id-visible" id = "subtask-title-id"></span>
+                    <ul id="step-list"></ul>
+                    <input id ="step-add" type="text" placeholder="Add step"/>
+                    <div class="right-col-icon" ><i class="icon fontIcon ms-Icon ms-Icon--Sunny iconSize-24" aria-hidden="true"></i><span class="right-col-span" >Add to My Day</span></div>
+                    <div class="right-col-icon" ><i class="icon fontIcon ms-Icon ms-Icon--AlarmClock iconSize-24" aria-hidden="true"></i><span class="right-col-span" >Remind me</span></div>
+                    <div class="right-col-icon" ><i class="icon fontIcon ms-Icon ms-Icon--Calendar iconSize-24" aria-hidden="true"></i><span class="right-col-span" >Add due date</span></div>
+                    <div class="right-col-icon" ><i class="icon fontIcon ms-Icon ms-Icon--RecurringEvent iconSize-24" aria-hidden="true"></i><span class="right-col-span" >Repeat</span></div>
+                </div>
+                </div>
+        <script src = "todo.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+header{
+    background-color:#0678d7;
+    width:1299px;
+    height:43Px;
+}
+.menu-icon{
+    height: 43px;
+    width:48px;
+    background-color:transparent;
+    border: none;
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+.menu-icon:hover{
+    background-color: blue;
+    border: 0px solid white;
+}
+.todo-link{
+background-color: #0078D7;
+text-decoration: none;
+}
+.todo-span{
+    padding: 11px 0px 5px 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    display:inline;
+}
+.search-bar{
+    margin-left:400px;
+    height:43Px;
+    display: inline-block;
+    position: absolute;
+}
+.main{
+    display:flex;
+    height:100%;
+}
+.ham-menu{
+    cursor:pointer;
+    padding:4px;
+    width:32px;
+    height:32px;
+}
+nav{
+    width: 48px;
+    height:100%;
+    background-color: #F4F4F4;
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+.nav-close{
+    width:48px;
+}
+.nav-open{
+    width:240px;
+}
+.icon-color{
+    color:#2878D7; 
+}
+.ham{
+    width:40px;
+    height:40px;
+}
+.ham:hover{
+    background-color: white;
+}
+.left-icon{
+    display:flex;
+    height: 40px;
+    padding-left: 12px;
+}
+.toggle-bar{
+    height: 35px;
+    padding-left:40px;
+}
+.plus{
+    padding-top: 20px;
+}
+.left-icon:hover{
+    background-color: white;
+}
+.GlobalNavButton1{
+    margin-bottom: 58px;
+}
+input[type="text"]{
+    margin-top:1px;
+}
+p{
+    margin-top:10px;
+}
+.taskbtn{
+    margin:none;
+}
+.task-menu{
+    display:flex;
+    padding: 5px 12px;
+}
+.task-toggle{
+    margin-top:-10px;
+    padding-left:32px;
+}
+.id-visible{
+    visibility:hidden;
+}
+.right-col{
+    float:right;
+    height:100%; 
+    width:0px;
+    background-color:blue;
+    margin-left:auto;
+    margin-right: 2px;
+    transition: 0.2s;
+}
+.right-col-icon{
+    display:flex;
+    height: 40px;
+    padding-left: 12px;
+}
+.right-col-span{
+    height: 35px;
+    padding-left:40px;
+}
+.background-lines {
+    margin: 0 24px;
+    flex: 1;
+    height: 100%;
+    background: linear-gradient(180deg, white, white 52px, #e5e5e5 52px, #e5e5e5 52px);
+    background-size: 100% 53px;
+    border-top: 1px solid #e5e5e5;
+}
